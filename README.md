@@ -13,6 +13,7 @@ Resources used:
 7. Single channel 5V Relay Module
 8. Battery x 2
 9. 5V optocoupler relay x 2
+
 Working of Project:
 1. Waste water is released by Aqua-guard during water purification. The water is collected in a
 container, where water level is measured using an ultrasonic sensor.
