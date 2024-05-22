@@ -35,21 +35,21 @@ void ADC_Initialize(void)
 	
 	ADC3->SMPR2= (7UL<<3*5);;//time=480 cycles         
 	ADC3->CR2 &=~2; //Single conversion mode  
-  ADC3->CR2|=3UL<<28;	//RISING AND FALLING EDGE DETECTION
+  	ADC3->CR2|=3UL<<28;	//RISING AND FALLING EDGE DETECTION
 	ADC3->CR2|=11UL<<24;	//Timer 5 - CC2
 	ADC3->CR1|=(1UL<<5);//Enable EOC IRQ 
-  ADC3->CR1|=(0UL<<24);// RESOLUTION SET TO 8 BIT
+  	ADC3->CR1|=(0UL<<24);// RESOLUTION SET TO 8 BIT
 	ADC3->CR1|=(1UL<<25);// RESOLUTION SET TO 8 BIT	
 	ADC3->CR2|=(1UL<<0);// ADC Enable   
 
-  ADC2->SMPR1=   0;   
+  	ADC2->SMPR1=   0;   
 	
 	ADC2->SMPR2= (7UL<<3*5);;//time=480 cycles         
 	ADC2->CR2 &=~2; //Single conversion mode  
-  ADC2->CR2|=3UL<<28;	//RISING AND FALLING EDGE DETECTION
+  	ADC2->CR2|=3UL<<28;	//RISING AND FALLING EDGE DETECTION
 	ADC2->CR2|=11UL<<24;	//Timer 5 - CC2
 	ADC2->CR1|=(1UL<<5);//Enable EOC IRQ 
-  ADC2->CR1|=(0UL<<24);// RESOLUTION SET TO 8 BIT
+  	ADC2->CR1|=(0UL<<24);// RESOLUTION SET TO 8 BIT
 	ADC2->CR1|=(1UL<<25);// RESOLUTION SET TO 8 BIT		
 	ADC2->CR2|=(1UL<<0);// ADC Enable   
 
